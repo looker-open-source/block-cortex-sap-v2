@@ -1,0 +1,34 @@
+{
+  "label": "Google Cloud Cortex Framework for SAP v2 - Operational Dashboards",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/cortex_icon.png",
+    "tagline": "Common operational analytics dashboards for data replicated from SAP S/4 or ERP into BigQuery leveraging Cortex Framework content."
+  },
+
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    },
+    "GCP_PROJECT_ID": {
+      "label": "GCP Project ID"
+    },
+    "REPORTING_DATASET": {
+      "label": "Reporting Dataset Name"
+    },
+     "CLIENT_ID": {
+      "label": "SAP Client ID"
+    },
+     "SIGN_CHANGE": {
+     "label": "SAP Sign Change for Income Statement Reports (yes or no)"
+    }
+  },
+      "models": [
+        {
+            "name": "cortex_sap_operational_v2",
+            "connection_constant": "CONNECTION_NAME"
+        }
+    ]
+
+}
